@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>Pig Dice Game</title>
+</head>
+
+<body>
+    <h1>
+    Pig Dice Game
+        <img src="./img/images.png" alt="Tärning">
+    </h1>
+
+    <label for="playerName" id="nameLabel">Ange ditt namn:</label>
+    <input type="text" id="playerName">
+    <button id="startGame">Starta spelet</button>
+
+    <div id="gameArea">
+        <p>Spelare: <span id="nameDisplay"></span></p>
+        <p>Totala poäng: <span id="totalScore">0</span></p>
+        <p>Omgångens poäng: <span id="roundScore">0</span></p>
+        <p>Antal Omgångar: <span id="rounds">0</span></p>
+        <p>Tärning: <img id="diceImage" src="./img/dice1.png" alt="Tärning" style="width: 60px;"></p>
+        <button id="roll">Kasta tärning</button>
+        <button id="hold">Frys poäng</button>
+        <p id="message"></p>
+        <button id="resetGame" style="display: none;">Spela igen</button>
+
+    </div>
+    
+    <script src="./js/script.js" defer></script>
+
+    <div id="simpleConfetti" style="display: none; position: fixed; inset: 0; pointer-events: none; z-index: 9999;">
+    </div>
+
+
+</body>
+</html>

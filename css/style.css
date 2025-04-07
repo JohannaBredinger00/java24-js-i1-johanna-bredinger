@@ -1,0 +1,87 @@
+body{
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: lightgray;
+    margin: 0;
+    padding: 20px;
+}
+
+h1{
+    color: #333;
+}
+
+img {
+    width: 100px;
+    margin-left: 10px;
+    vertical-align: middle;
+    border-radius: 10px;
+}
+
+#gameArea {
+    margin-top: 20px;
+    padding: 20px;
+    background: white;
+    display: inline-block;
+    border-radius: 10px;
+    box-shadow: 20px 20px 20px rgba(148, 6, 94, 0.1);
+}
+
+button {
+    background: violet;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#resetGame {
+    margin: 20px auto;
+}
+
+button:hover {
+    background: hotpink;
+}
+
+
+#message {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: lightgray
+    margin-top: 20px;
+}
+
+@keyframes fall {
+    0% { transform: translateY(-100vh) rotate(0deg); 
+        opacity: 1;
+    }
+
+    100% { transform: translateY(100vh) rotate(360deg); 
+        opacity: 0;
+    }
+}
+
+.confetti {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: red;
+    animation: fall 3s linear forwards;
+}
+
+@keyframes shake {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(10deg);}
+    50% { transform: rotate(-10deg); }
+    75% { transform: rotate(10deg);}
+    100% { transform: rotate(0deg); }
+}
+
+.shake {
+    animation: shake 0.4s ease;
+}
+
+
+
